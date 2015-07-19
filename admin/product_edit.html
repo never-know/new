@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/fucome.css">
+<!--[if !IE]><!--> 
+  
+  <!--<![endif]-->
+  
+  <!--[if lt IE 9]>
+ 
+  <![endif]-->
+  
+  <!--[if IE 7]>
+
+  <![endif]-->	
+  <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<!--[if lte  IE 6]>
+<style>
+body {behavior: url("csshover3.htc");}
+.user-title{
+  padding:17px 0;
+  }
+
+</style>
+<![endif]-->
+ 
+<script>
+function hide(obj){
+var obj=obj;
+obj.parentNode.style.display="none";
+}
+function setselect(v,id)
+	{
+		document.getElementById('type_name').innerHTML=v;
+		document.getElementById('').value=id;
+	}
+function switchStore(obj) {
+        var storeParam = obj.value ? 'store/' + obj.value + '/' : '';
+        if (obj.switchParams) {
+            storeParam += obj.switchParams;
+        }
+            setLocation('http://www.magento.com/index.php/admin/catalog_product/index/key/102e07032ad93323dfeab2608da862d8/' + storeParam);
+        }
+
+</script>
+</head>
+<body>
+<div class="container">
+	<noscript>
+        <div class="noscript">
+            <div class="noscript-inner">
+                <p><strong>你的浏览器似乎禁用了 JavaScript。</strong></p>
+                <p>您必须在浏览器中启用JavaScript才能使用本网站的功能。</p>
+            </div>
+        </div>
+    </noscript>
+ 	<div class="header-wrapper">
+		<div class="header">
+			<div class="logo">
+				<a href=""><img src="image/logo.png" alt="AnnQi徽标"  ></a> 
+			</div>
+			 
+			 
+			<div class="search-2014" >
+				<div class="form">
+					<form name="searchTop" action=""  class="search-form" accept-charset="utf-8">
+						
+						<div class="search_type"> 
+							<div id="type_name" class="type-name">选择</div>
+							<ul>                
+								<li onclick="setselect('密码')">密码</li>
+								<li onclick="setselect('昵称')"> 昵称 </li>
+								<li onclick="setselect('退出')"> 退出 </li>
+							</ul>
+						</div>	
+						<input type="text" onkeydown="javascript:if(event.keyCode==13) search('key');" autocomplete="off" id="keywords" accesskey="s" class="text" name="keywords"/>
+						<button type="submit" class="button">搜索</button>
+						
+					</form>
+				</div>
+			</div>
+			
+			<div class="user-bar"> 
+				<div class="user-title"><em>ybcoming</em><span><yb></yb></span></div>
+				<ul>                
+					<li><a href="#">修改密码</a></li>
+					<li><a href="#">修改昵称</a></li>
+					<li><a href="#">安全退出</a></li>
+				</ul>
+				 <div class="clear"></div> 
+			</div>	
+			<div class="notification-global" >
+			
+				<span class="f-right">
+					您有 <span class="critical"><a href=""><strong>1000</strong></a>个通知</span>,&nbsp
+					<span class="critical"><a href=""><strong>1000</strong></a>个代办事项</span>
+				</span>
+			</div>
+
+		</div>
+
+ 	</div> 
+	<div class="main-nav-wrapper">
+		<div class="main-nav" >
+			<ul id="top_ul">
+				<li><a href="" >仪表盘</a></li>
+				<li><a href="" >商品系统</a>
+					<div class="dropdown_4columns"><!-- Begin 4 columns container -->
+
+						<div class="col_1">
+						
+							<h3>商品管理</h3>
+							<ul>
+								<li><a href="#">所有商品</a></li>
+								<li><a href="#">添加商品</a></li>
+								<li><a href="#">添加条形码</a></li>
+							
+							</ul>   
+							 
+						</div>
+				
+						<div class="col_1">
+						
+							<h3>商品分类</h3>
+							<ul>
+								<li><a href="#">分类列表</a></li>
+								<li><a href="#">添加分类</a></li>
+					
+							</ul>   
+							 
+						</div>
+				
+						<div class="col_1">
+						
+							<h3>Other Stuff</h3>
+							<ul>
+								<li><a href="#">FreelanceSwitch</a></li>
+								<li><a href="#">Creattica</a></li>
+								<li><a href="#">WorkAwesome</a></li>
+								<li><a href="#">Mac Apps</a></li>
+								<li><a href="#">Web Apps</a></li>
+							</ul>   
+							 
+						</div>
+				
+						<div class="col_1">
+						
+							<h3>Misc</h3>
+							<ul>
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Logo</a></li>
+								<li><a href="#">Flash</a></li>
+								<li><a href="#">Illustration</a></li>
+								<li><a href="#">More...</a></li>
+							</ul>   
+							 
+						</div>
+					 
+					</div> 
+				
+				
+				</li>
+				<li><a href="" >订单系统</a></li>
+				<li><a href="" >用户管理</a>
+				 			
+				</li>
+				<li><a href="" >促销系统</a>
+				 
+				</li>
+				<li><a href="" >物流系统</a></li>
+				<li><a href="" >财务系统</a></li>
+				<li><a href="" >广告系统</a></li>
+				<li><a href="" >积分系统</a></li>
+				<li><a href="" >系统设置</a>
+				<div class="dropdown_4columns" ><!-- Begin 4 columns container -->
+
+						<div class="col_1">
+						
+							<h3>Some Links</h3>
+							<ul>
+								<li><a href="#">ThemeForest</a></li>
+								<li><a href="#">GraphicRiver</a></li>
+								<li><a href="#">ActiveDen</a></li>
+								<li><a href="#">VideoHive</a></li>
+								<li><a href="#">3DOcean</a></li>
+							</ul>   
+							 
+						</div>
+				
+						<div class="col_1">
+						
+							<h3>Useful Links</h3>
+							<ul>
+								<li><a href="#">NetTuts</a></li>
+								<li><a href="#">VectorTuts</a></li>
+								<li><a href="#">PsdTuts</a></li>
+								<li><a href="#">PhotoTuts</a></li>
+								<li><a href="#">ActiveTuts</a></li>
+							</ul>   
+							 
+						</div>
+				
+						<div class="col_1">
+						
+							<h3>Other Stuff</h3>
+							<ul>
+								<li><a href="#">FreelanceSwitch</a></li>
+								<li><a href="#">Creattica</a></li>
+								<li><a href="#">WorkAwesome</a></li>
+								<li><a href="#">Mac Apps</a></li>
+								<li><a href="#">Web Apps</a></li>
+							</ul>   
+							 
+						</div>
+				
+						<div class="col_1">
+						
+							<h3>Misc</h3>
+							<ul>
+								<li><a href="#">Design</a></li>
+								<li><a href="#">Logo</a></li>
+								<li><a href="#">Flash</a></li>
+								<li><a href="#">Illustration</a></li>
+								<li><a href="#">More...</a></li>
+							</ul>   
+							 
+						</div>
+					 
+					</div> 
+				
+				
+				</li>
+				<li><a href="" >报表系统</a></li>
+				<li><a href="" >论坛系统</a></li>
+			</ul>
+		
+		</div>	
+		
+	</div>
+	
+	<div clas="content-wrapper">
+		<div class="content">
+			<div class="left-col">
+				 <h3>产品信息</h3>
+				<ul class="product_info_tabs" class="tabs">
+					<li class="active">常规</li>
+					<li>价格</li>
+					<li>产品简介</li>
+					<li>规格参数</li>
+					<li>包装清单</li>
+					<li>促销信息</li>
+					<li>服务信息</li>
+					<li>SEO</li>
+				</ul>
+			</div>
+			<div class="main-col">
+				<div class="message"></div>
+				<div class="content-header">
+					<h3>添加新产品</h3>
+					 <div class="a-right"><button>保存 </button></div>
+				</div>
+				<div class="content-inner">
+					<h3>常规</h3>
+					<table cellspacing="0" class="form-list">
+						<tbody>
+							<tr>
+								<td class="label">
+									<label for="name">姓名 <span class="required">*</span></label>
+								</td>
+								<td class="value">
+									<input id="name" name="product[name]"  type="text"/>        
+								</td>
+							</tr>
+
+							<tr>
+								<td class="label">
+									<label for="description">描述 <span class="required">*</span></label>
+								</td>
+								<td class="value">
+									<textarea id="description" name="product[description]"  rows="2" cols="15" ></textarea>
+								</td>
+							</tr>
+
+						 
+
+							<tr>
+								<td class="label"><label for="sku">SKU <span class="required">*</span></label></td>
+								<td class="value">
+									<input id="sku" name="product[sku]" value="" type="text"/>            </td>
+							</tr>
+							<tr>
+								<td class="label">
+									<label for="status">状态 <span class="required">*</span></label>
+								</td>
+								<td class="value">
+									<select id="status" name="product[status]" >
+										<option value="" selected="selected">-- 请选择 --</option>
+										<option value="1">已启用</option>
+										<option value="2">已禁用</option>
+									</select>           
+								</td>
+							</tr>
+							<tr>
+								<td class="label">
+									<label for="url_key">URL Key</label>
+								</td>
+								<td class="value">
+									<input id="url_key" name="product[url_key]" value="" class=" input-text" type="text"/>
+								</td>
+								</tr>
+
+							<tr>
+								<td class="label">
+									<label for="visibility">可见性 <span class="required">*</span></label>
+								</td>
+								<td class="value">
+									<select id="visibility" name="product[visibility]">
+										<option value="">-- 请选择 --</option>
+										<option value="1">无独立可见性</option>
+										<option value="2">分类</option>
+										<option value="3">搜索</option>
+										<option value="4" selected="selected">分类，搜索</option>
+									</select>            
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+ 
+	
+ 
+	
+	
+	
+	
+	
+ 
+	<div class="footer">
+	</div>
+	
+</div>
+</body>
+</html>
