@@ -33,7 +33,7 @@ function Placeholder(obj){
 this.input = obj; 
 this.label = document.createElement('label'); 
 this.label.innerHTML = obj.getAttribute('placeholder'); 
-this.label.style.cssText = 'position:absolute; text-indent:6px;color:#999999;padding-top:2px'; 
+this.label.style.cssText = 'position:absolute; text-indent:6px;color:#999999;padding-top:2px;cursor:pointer'; 
 if(obj.value != ''){ 
 this.label.style.display = 'none'; 
 } 
