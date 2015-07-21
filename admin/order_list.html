@@ -3,6 +3,9 @@
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/fucome.css">
+<link rel="stylesheet" href="css/tcal.css">
+<script type="text/javascript" src="js/tcal.js"></script>
+<script type="text/javascript" src="js/placeholder.js"></script>
 <!--[if !IE]><!--> 
   
   <!--<![endif]-->
@@ -268,43 +271,40 @@ function switchStore(obj) {
 				<table cellspacing="0" class="data" id="productGrid_table">
 					<thead>
 						<tr class="headings">
-							<th class="product_checkbox">&nbsp;</th>
-							<th class="product_id">商品编码</th>
-							<th class="product_name">商品名称</th>
-							<th class="product_sku">条形码</th>
-							<th  class="product_type">类型</th>
-							<th class="product_attribute">属性</th>
-							<th class="product_price">价格</th>
-							<th class="product_stock">库存</th>
-							<th class="product_status">状态</th>
-							<th class="product_op">操作</th>
+							<th class="order_checkbox">&nbsp;</th>
+							<th class="order_id">订单#</th>
+							<th class="order_time">订单时间</th>
+							<th class="order_username">用户名</th>
+							<th class="order_total">总价</th>
+							<th class="order_status">状态</th>
+							<th class="order_op">操作</th>
 						</tr>
 						<tr class="filter">
-							<th ></th>
-							<th  >
+							<th></th>
+							<th>							 
+								<input type="text" name="id" id="filter_id"  /> 
+							</th>
+							<th>
 							 
-								<input type="text" name="id" id="filter_id"  />
-							 
+									<input type="text" name="time_from" id="filter_from"  class="tcal tcalinput"  placeholder="起始时间"/>
+								 
+								 <input type="text" name="time_to" id="filter_to"  class="tcal tcalinput"  placeholder="终止时间"/> 
 							</th>
-							<th  >
-								<input type="text" name="name" id="filter_name"  />
+							<th>
+								<input type="text" name="username" id="filter_username"  />
 							</th>
-							<th  >
-								<input type="text" name="sku" id="filter_sku"  />
-							</th>
+							<th></th>
 							<th  >
 								<select name="type" id="filter_type">
 									<option value=""></option>
-									<option value="simple">简单产品</option>
-									<option value="grouped">分组产品</option>
-									<option value="virtual">虚拟产品</option>
-									<option value="bundle">组合产品</option>
+									<option value="waitting">待审核</option>
+									<option value="confirmed">系统已确认</option>
+									<option value="bagging">打包中</option>
+									<option value="sending">已出库</option>
+									<option value="finish">已完成</option>
+									<option value="cancel">取消</option>
 								</select>
 							</th>
-							<th></th>
-							<th></th>
-							<th></th>
-							<th></th>
 							<th><a href="">筛选</a></th>
 						</tr>
 					</thead>
@@ -318,99 +318,74 @@ function switchStore(obj) {
 								1422244             
 							</td>
 							<td class="">
-								尼康（Nikon）D5500 黑色单反套机（AF-S DX 尼克尔 18-140mm f/3.5-5.6G ED VR）                 
+								2015.3.2               
 							</td>
 							<td class="">
-								7893123333234                    
-							</td>
-							<td class="">
-								捆绑产品                    
-							</td>
-							<td class="">
-								Default                    
+								ybcoming               
 							</td>
 							
 							<td class="">
 								￥12,000                    
+							</td><td class="">
+								已完成                   
 							</td>
+							
 							<td class="">
-								100                    
-							</td>
-							<td class="">
-								在售                    
-							</td>
-							<td class="">
-								<a href="">编辑</a>
-								<br>
-								<a href="">改价</a> 
+								<a href="">查看</a>
+							 
 							</td>        
 						</tr>
 						<tr>
-							<td class=" ">
+							<td class="">
 								<input type="checkbox" name="id" value="887"/>
 							</td>
-							<td class="  ">
-								887                    
+							<td class="">
+								1422244             
 							</td>
-							<td>
-								My Bundle Product                    
+							<td class="">
+								2015.3.2               
 							</td>
-							<td class=" ">
-								ABC 234                    
+							<td class="">
+								ybcoming               
 							</td>
-							<td class=" ">
-								捆绑产品                    
+							 
+							<td class="">
+								￥12,000                    
 							</td>
-							<td class=" ">
-								Default                    
+							<td class="">
+								已完成                   
 							</td>
-							
-							<td class="  ">
-								￥120                    
-							</td>
-							<td class="  ">
-								100                    
-							</td>
-							<td class=" ">
-								已启用                    
-							</td>
-							<td class=" ">
-								<a href="">编辑</a>                    
+							<td class="">
+								<a href="">查看</a>
+								 
 							</td>        
 						</tr>
 						<tr>
-							<td class=" ">
+							<td class="">
 								<input type="checkbox" name="id" value="887"/>
 							</td>
-							<td class="  ">
-								887                    
+							<td class="">
+								1422244             
 							</td>
-							<td>
-								My Bundle Product                    
+							<td class="">
+								2015.3.2               
 							</td>
-							<td class=" ">
-								ABC 234                    
+							<td class="">
+								ybcoming               
 							</td>
-							<td class=" ">
-								捆绑产品                    
+							 
+							<td class="">
+								￥12,000                    
 							</td>
-							<td class=" ">
-								Default                    
+							<td class="">
+								已完成                   
 							</td>
-							
-							<td class="  ">
-								￥120                    
-							</td>
-							<td class="  ">
-								100                    
-							</td>
-							<td class=" ">
-								已启用                    
-							</td>
-							<td class=" ">
-								<a href="">编辑</a>                    
+							<td class="">
+								<a href="">查看</a>
+								  
 							</td>        
 						</tr>
+
 					</tbody>
 				</table>
 			
@@ -447,42 +422,6 @@ function switchStore(obj) {
 	
  
 </div>
-<script type="text/javascript">
-	 
-	var map = new BMap.Map("allmap");
-	var point = new BMap.Point(116.331398,39.897445);
-	map.centerAndZoom(point,12);
-	
-	map.enableScrollWheelZoom();  
-	map.enableContinuousZoom(); 
-	
-	function myFun(result){
-		var cityName = result.name;
-		map.setCenter(cityName);
-		//alert("当前定位城市:"+cityName);
-	}
-	var myCity = new BMap.LocalCity();
-	myCity.get(myFun);
-	
-	
-	var geoc = new BMap.Geocoder();    
 
-	map.addEventListener("click", function(e){
-      alert(e.point.lng + "," + e.point.lat);
-      var marker = new BMap.Marker(new BMap.Point(e.point.lng, e.point.lat));
-      map.clearOverlays();
-    map.addOverlay(marker);  
-		var pt = e.point;
-		geoc.getLocation(pt, function(rs){
-			var addComp = rs.addressComponents;
-			alert(addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber);
-		});   
- document.getElementById('message').style.display='block';;
- 		
-	});
-	
-	
-</script>
- 
 </body>
 </html>

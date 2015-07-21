@@ -384,6 +384,7 @@ background:#EAEAEA;
   width: 100% !important; 
   padding:2px 0px;
   line-height: 17px;
+  text-indent:5px;
 }
 
 .filter{
@@ -489,4 +490,36 @@ padding:5px;
 }
 .content-inner table td.value textarea {
   height: 15em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************订单列表*************/
+
+.filter th input.tcalinput{
+  background: url('../image/cal.gif') 100% 50% no-repeat white;
+  cursor: pointer;
+}
+th label{
+display:block;
+width:100px;
+}
+.tcal {
+width:100%;
+}
+.order_time{
+width:200px;
+}
+body>label{
+cursor:pointer;
 }
