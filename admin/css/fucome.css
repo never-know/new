@@ -14,7 +14,10 @@ a {
  text-decoration:none;
  outline: none;
 }
+table{
+  width: 100% !important;
 
+}
 .container {
  width:100%;
  min-width:1002px;;
@@ -343,12 +346,12 @@ background:silver;
 .a-right {
   text-align: right !important;
 }
-.content-header button{
+.content-header button , .login-form .form-button{
   border-width: 1px;
   border-style: solid;
   border-color: #ed6502 #a04300 #a04300 #ed6502;
   background:#DC680E;
-  padding: 1px 7px 2px 7px;
+  padding: 1px 6px 2px 7px;
   color: #fff;
   cursor: pointer;
   text-align: center !important;
@@ -439,7 +442,8 @@ padding-top:25px;
 .left-col h3{
 padding-left:6px;
 height:28px;
-border-bottom:2px solid #bebebe;
+border-right: 2px solid #bebebe;
+  border-bottom: 1px solid #bebebe;
 }
 .left-col ul{
   background: #E7EFEF;
@@ -476,7 +480,6 @@ padding-left:10px;
 }
 .content-inner table{
 padding:20px 38px;
-width: 100% !important;
 }
 .content-inner table td.label{
 width:150px;
@@ -492,7 +495,9 @@ padding:5px;
   height: 15em;
 }
 
-
+.clear{
+clear:both;
+}
 
 
 
@@ -510,6 +515,10 @@ padding:5px;
   background: url('../image/cal.gif') 100% 50% no-repeat white;
   cursor: pointer;
 }
+.filter th input.tcalActive{
+  background: url('../image/no_cal.gif') 100% 50% no-repeat white;
+  cursor: pointer;
+}
 th label{
 display:block;
 width:100px;
@@ -519,4 +528,103 @@ width:100%;
 }
 .order_time{
 width:200px;
+}
+
+
+
+
+/***********订单详情*********/
+
+.box-left{
+width:48%;
+float:left;
+}
+.box-right{
+width:48%;
+float:right;
+}
+
+.entry-edit .entry-edit-head {
+  background: #6f8992;
+  padding: 2px 10px;
+}
+.entry-edit .entry-edit-head h4 {
+  padding: 0;
+  background: none;
+  margin: 0;
+  color: #fff;
+  font-size: 1em;
+  line-height: 18px;
+  min-height: 0;
+}
+.entry-edit .fieldset {
+  border: 1px solid #d6d6d6;
+  background: #fafafa;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+
+/************登陆**************/
+ 
+.login-box {
+  width: 581px;
+  margin: 170px auto;
+  padding-left: 32px;
+}
+ .login-form {
+  padding: 27px 57px 35px 57px;
+  background: url(../image/login_box_bg.jpg) no-repeat;
+  text-align: left;
+}
+.login-form h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+.login-form .input-left {
+  float: left;
+}
+.login-form .input-right {
+  float: right;
+}
+.login-form .form-buttons {
+  margin: 12px 0 0 0;
+  clear: both;
+  text-align: right;
+}
+.login-box .legal {
+  margin: 0;
+  border:1px solid #bebebe;
+  padding: 8px 8px 5px 8px;
+  text-align:center;
+}
+.login-form .input-box input.input-text {
+  width: 224px;
+}
+.login-form label {
+  font-weight: bold;
+}
+.error-msg {
+  border: 1px solid #f16048 !important;
+  color: #df280a !important;
+  background: #faebe7 ;
+}
+#messages{
+margin:6px 0;
+}
+#messages ul {
+display:none;
+}
+#messages li {
+  min-height: 23px !important;
+  padding: 6px 8px 2px 22px !important;
+  font-weight: bold !important;
+  list-style:none;
+}
+.f-left, .left {
+  float: left;
+}
+.login-form a {
+  color: #ea7601;
+  text-decoration: underline;
 }

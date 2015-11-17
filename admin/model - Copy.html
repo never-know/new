@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/fucome.css">
+<!--[if !IE]><!--> 
+  
+  <!--<![endif]-->
+  
+  <!--[if lt IE 9]>
+ 
+  <![endif]-->
+  
+  <!--[if IE 7]>
+
+  <![endif]-->	
+  <!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<!--[if lte  IE 6]>
+<style>
+body {behavior: url("csshover3.htc");}
+.user-title{
+  padding:17px 0;
+  }
+
+</style>
+<![endif]-->
+ 
+<script>
+function hide(obj){
+var obj=obj;
+obj.parentNode.style.display="none";
+}
+function setselect(v,id)
+	{
+		document.getElementById('type_name').innerHTML=v;
+		document.getElementById('').value=id;
+	}
+function switchStore(obj) {
+        var storeParam = obj.value ? 'store/' + obj.value + '/' : '';
+        if (obj.switchParams) {
+            storeParam += obj.switchParams;
+        }
+            setLocation('http://www.magento.com/index.php/admin/catalog_product/index/key/102e07032ad93323dfeab2608da862d8/' + storeParam);
+        }
+
+</script>
+</head>
+<body>
+<div class="container">
+	<noscript>
+        <div class="noscript">
+            <div class="noscript-inner">
+                <p><strong>你的浏览器似乎禁用了 JavaScript。</strong></p>
+                <p>您必须在浏览器中启用JavaScript才能使用本网站的功能。</p>
+            </div>
+        </div>
+    </noscript>
+	<div style="margin:170px auto; width:500px; background:red">
+	hellwo 
+	</div>
+
+	
+</div>
+</body>
+</html>
